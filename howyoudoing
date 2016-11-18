@@ -1,0 +1,23 @@
+#A script for fast start-up to either Python or Java coding
+
+import datetime
+
+#def dojava (): print "Let's write some java"
+#def dosnake (): print "Let's script in Python"
+
+#def somethingelse ():
+#   print "I guess you don't feel like coding now"
+
+T = "{:%B %d, %Y, %H:%M:%S}".format(datetime.datetime.now())
+
+feeling = raw_input("Miten voit? ")
+
+file = open("startupfeel.txt" , "a")
+
+
+file.write(T + " Nyt tuntuu tältä: " + feeling + "\n")
+file.close()
+
+#act = {"java": dojava,"python": dosnake}
+
+#act.get(feeling,default)()
